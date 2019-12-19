@@ -1,4 +1,5 @@
 import express from 'express'
+//setting up express middleware
 const app = express()
 
 // port 
