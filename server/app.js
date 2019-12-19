@@ -5,6 +5,7 @@ const app = express()
 // port 
 const port = 4000
 
+// get route
 app.get('/', (req, res) => {
     res.send(`<h1>Going Remote 2020 simulation server...`)
 })
