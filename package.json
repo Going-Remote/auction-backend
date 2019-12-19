@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server/bin/dev",
+    "test": "mocha server/test/app.test.js --exit --require babel-register --reporter spec",
     "clean": "rm -rf dist",
     "build": "npm run clean && mkdir dist && babel server -s -d dist",
     "production": "npm run build && node server/bin/prod"
@@ -21,7 +22,10 @@
   "homepage": "https://github.com/going-remote/auction-backend#readme",
   "dependencies": {
     "babel-watch": "^7.0.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "express": "^4.17.1",
+    "mocha": "^6.2.2",
     "nodemon": "^2.0.2"
   },
   "devDependencies": {
