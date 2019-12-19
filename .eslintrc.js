@@ -5,7 +5,7 @@ module.exports = {
     es6: true,
   },
   extends: [
-    'plugin:vue/essential',
+    'plugin:node/essential',
     'airbnb-base',
   ],
   globals: {
@@ -16,7 +16,7 @@ module.exports = {
     ecmaVersion: 2018,
   },
   plugins: [
-    'vue',
+    'node',
   ],
   rules: {
   },
