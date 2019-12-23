@@ -4,12 +4,9 @@ var data = [
     {id: 3, name: 'Sam Doe', email: 'samdoe@gmail.com', password: '123457'},
 ]
 
-exports.getAllUser = async (req, res) => {
+exports.getAllUsers = async (req, res) => {
     try {
-        const info = await data.findAll({})
-        return res.status(200).json({
-            info: info
-        })
+        return data
     } catch (e) {
         return res.status(500).json({error: e.message})
     }
@@ -17,11 +14,7 @@ exports.getAllUser = async (req, res) => {
 
 exports.getSingleUser = async (req, res) => {
     try {
-        const { id } = req.params
-        const info = await data.findOne({ where: {id: id }})
-        return res.status(200).json({
-            info: info
-        })
+        return data
     } catch (e) {
         return res.status(500).json({error: e.message})
     }
@@ -29,12 +22,7 @@ exports.getSingleUser = async (req, res) => {
 
 exports.deleteUser = async (req, res) => {
     try {
-        const { id } = req.params
-        const info = await data.findOne({ where: {id: id }})
-        if(info) {
-            return await data.destroy({ where: {id: id }})
-        }
-        return null
+        return data
     } catch (e) {
         return res.status(500).json({error: e.message})
     }
