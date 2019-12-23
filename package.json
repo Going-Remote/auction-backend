@@ -1,0 +1,41 @@
+{
+  "name": "auction-backend",
+  "version": "1.0.0",
+  "description": "contains all auction apis",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/bin/dev",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && mkdir dist && babel server -s -d dist",
+    "production": "npm run build && node server/bin/prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/going-remote/auction-backend.git"
+  },
+  "author": "otitoju, lois, feranmi, 4mulaman, kondi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/going-remote/auction-backend/issues"
+  },
+  "homepage": "https://github.com/going-remote/auction-backend#readme",
+  "dependencies": {
+    "babel-watch": "^7.0.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.15",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-vue": "^6.0.1"
+  }
+}
