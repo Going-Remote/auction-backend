@@ -2,7 +2,10 @@ import express from 'express'
 const app = express()
 import routes from './routes/routes'
 
+<<<<<<< HEAD
 app.use('/', routes)
+=======
+>>>>>>> chores setting up auction server and mvc
 // port 
 const port = 4000
 
