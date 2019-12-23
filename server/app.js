@@ -1,7 +1,8 @@
 import express from 'express'
-//setting up express middleware
 const app = express()
+import routes from './routes/routes'
 
+app.use('/', routes)
 // port 
 const port = 4000
 
