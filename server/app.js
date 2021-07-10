@@ -14,3 +14,5 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log(`Going Remote server started ${port}`)
 })
+
+export default app
