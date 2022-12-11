@@ -21,7 +21,7 @@
   "homepage": "https://github.com/going-remote/auction-backend#readme",
   "dependencies": {
     "babel-watch": "^7.0.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "lodash": "^4.17.15",
     "nodemon": "^2.0.2"
   },
